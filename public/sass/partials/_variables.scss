@@ -1,0 +1,56 @@
+/*********************
+COLORS
+*********************/
+$text-color:		#fff;
+$link-color:		#414141;
+
+$hue1:				#14213d;
+$hue2:				#fca311;
+$hue3:				#e5e5e5;
+$hue4:				#ffffff;
+$hue5:				#000;
+$hue6:              #1f1f1f;
+
+$btn-primary:		$hue1;
+
+$background-gray: #f4f6f5;
+
+$background-overlay: $hue5;
+$header-background-overlay: #0A0A0A;
+$black-background: $hue3;
+$black2-background: $hue6;
+
+// Used in tables
+$light-gray:		#f8f9fa;
+$gray:				#eaedf2;
+
+/*********************
+OTHERS
+*********************/
+$site-width:		1920px;
+
+$mobile-font-size:	16px;
+$menu-item-amount:	8;
+
+$pad-mobile:		50px;
+$pad-normal:		75px;
+$pad-normal-half:	75px;
+
+$transition:		all 0.4s ease-in-out 0s;
+
+/*********************
+FA ICONS
+*********************/
+$fa-email:			'\f0e0';
+$fa-phone:			'\f879';
+$fa-address:		'\f3c5';
+
+$fa-facebook:		'\f39e';
+$fa-instagram:		'\f16d';
+$fa-linkedin:		'\f0e1';
+$fa-twitter:		'\f099';
+
+$fa-caret-right:	'\f0da';
+$fa-angle-right:	'\f105';
+$fa-caret-down:		'\f0d7';
+$fa-check:			'\f00c';

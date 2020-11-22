@@ -1,0 +1,181 @@
+.gutter {
+  margin-left: 10px;
+  margin-right: 10px;
+  @include bp('narrow'){
+    float: left;
+  }
+}
+
+.last-col {
+  float: right;
+  margin-right: 0;
+}
+.col-1of2 {
+  float: left;
+  margin-right: 4%;
+  width: 48%;
+}
+
+@mixin grid-col-3 {
+  float: left;
+  margin-right: 5%;
+}
+@mixin grid-col-4 {
+  float: left;
+  margin-right: 4%;
+}
+
+.col-1of3 {
+  @include bp('narrow'){
+    @include grid-col-3;
+    width: 30%;
+  }
+
+}
+.col-2of3 {
+  @include bp('narrow'){
+    @include grid-col-3;
+    width: 65%;
+  }
+
+}
+.col-1of4 {
+  @include bp('narrow'){
+    @include grid-col-4;
+    width: 22%;
+  }
+
+}
+.col-3of4 {
+  @include bp('narrow'){
+    @include grid-col-4;
+    width: 74%;
+  }
+
+}
+
+
+.columns-6 {
+  @include bp('narrow'){
+    width: 340px;
+  }
+
+  @include bp('normal'){
+    width: 460px;
+  }
+
+  @include bp('large'){
+    width: 580px;
+  }
+}
+.columns-7 {
+  @include bp('narrow'){
+    width: 400px;
+  }
+
+  @include bp('normal'){
+    width: 540px;
+  }
+
+  @include bp('large'){
+    width: 680px;
+  }
+}
+.columns-8 {
+  @include bp('narrow'){
+    width: 460px;
+  }
+
+  @include bp('normal'){
+    width: 620px;
+  }
+
+  @include bp('large'){
+    width: 780px;
+  }
+}
+.columns-9 {
+  @include bp('narrow'){
+    width: 520px;
+  }
+
+  @include bp('normal'){
+    width: 700px;
+  }
+
+  @include bp('large'){
+    width: 880px;
+  }
+}
+.columns-10 {
+  @include bp('narrow'){
+    width: 580px;
+  }
+
+  @include bp('normal'){
+    width: 780px;
+  }
+
+  @include bp('large'){
+    width: 980px;
+  }
+}
+.columns-11 {
+  @include bp('narrow'){
+    width: 640px;
+  }
+
+  @include bp('normal'){
+    width: 860px;
+  }
+
+  @include bp('large'){
+    width: 1080px;
+  }
+}
+
+.columns-12 {
+  @include bp('narrow'){
+    width: 700px;
+  }
+
+  @include bp('normal'){
+    width: 940px;
+  }
+
+  @include bp('large'){
+    width: 1180px;
+  }
+
+  @include bp('large'){
+    width: 1180px;
+  }
+
+  @include bp('extra-large'){
+    width: 1280px;
+  }
+}
+
+#zone-header,
+#zone-navigation,
+#zone-content,
+#zone-postscript,
+#zone-postscript-2,
+#zone-footer,
+#zone-footer-2{
+  @include bp('narrow'){
+    width: 700px;
+  }
+
+  @include bp('normal'){
+    width: 960px;
+  }
+
+  @include bp('large'){
+    width: 1180px;
+  }
+
+  @include bp('extra-large'){
+    width: 1280px;
+  }
+}

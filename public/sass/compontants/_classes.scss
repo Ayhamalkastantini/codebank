@@ -1,0 +1,102 @@
+.wrapper,
+.grid {
+  display: table;
+  width: 100%;
+}
+
+.center {
+  margin: 0 auto;
+  display: table;
+
+  @include bp('mobile'){
+    padding: 0px 10px;
+  }
+}
+
+.relative{
+  position: relative;
+}
+
+.image {
+  img {
+    display: block;
+  }
+}
+
+.text-center {
+  text-align: center;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.object-fit {
+  background-size: cover;
+  background-position: center;
+}
+
+.mobile-none{
+  @include bp('mobile'){
+    display: none;
+  }
+}
+.mobile-only {
+  @include bp('narrow'){
+    display: none;
+  }
+}
+
+.pad-both{
+  @include bp('mobile'){
+    padding-top: $pad-mobile;
+    padding-bottom: $pad-mobile;
+  }
+  @include bp('narrow'){
+    padding-top: $pad-normal;
+    padding-bottom: $pad-normal;
+  }
+}
+.pad-top{
+  @include bp('mobile'){
+    padding-top: $pad-mobile;
+  }
+  @include bp('narrow'){
+    padding-top: $pad-normal;
+  }
+}
+.pad-bottom{
+  @include bp('mobile'){
+    padding-bottom: $pad-mobile;
+  }
+  @include bp('narrow'){
+    padding-bottom: $pad-normal;
+  }
+}
+
+.pad-both-half {
+  @include bp('mobile'){
+    padding-top: $pad-mobile;
+    padding-bottom: $pad-mobile;
+  }
+  @include bp('narrow'){
+    padding-top: $pad-normal-half;
+    padding-bottom: $pad-normal-half;
+  }
+}
+.pad-top-half {
+  @include bp('mobile'){
+    padding-top: $pad-mobile;
+  }
+  @include bp('narrow'){
+    padding-top: $pad-normal-half;
+  }
+}
+.pad-bottom-half {
+  @include bp('mobile'){
+    padding-bottom: $pad-mobile;
+  }
+  @include bp('narrow'){
+    padding-bottom: $pad-normal-half;
+  }
+}

@@ -1,0 +1,73 @@
+%btn {
+  display: inline-block;
+  position: relative;
+  text-decoration: none;
+  color: #fff;
+  line-height: 1em;
+  font-weight: 700;
+  padding: 10px 15px 9px;
+  border-radius: 5px;
+  border: 2px solid;
+  cursor: pointer;
+  &:hover,
+  &:focus,
+  &:active {
+    color: #fff;
+    text-decoration: none;
+    outline: none;
+  }
+}
+
+.btn-primary,
+input[type="submit"],
+button{
+  @extend %btn;
+  background-color: $btn-primary;
+  color: white;
+  border-color: $btn-primary;
+
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: transparent;
+    color: $btn-primary;
+    border-color: $btn-primary;
+  }
+}
+
+.buttons{
+  padding-top: 20px;
+  .phone{
+    display: inline-block;
+    font-weight: 500;
+    font-size: 14px;
+    color: white;
+    i{
+      margin: 0 2px 0 5px;
+      display: inline-block;
+    }
+    a{
+      font-weight: 700;
+      color: white;
+    }
+    @include bp('mobile'){
+
+      margin-top: 15px;
+    }
+    @include bp('narrow'){
+      margin-left: 5px;
+    }
+    @include bp('normal'){
+      margin-left: 10px;
+    }
+    &.only-phone{
+      margin-left: 0;
+      @include bp('mobile'){
+        letter-spacing: 0;
+      }
+      @include bp('narrow'){
+        font-size: 14px;
+      }
+    }
+  }
+}

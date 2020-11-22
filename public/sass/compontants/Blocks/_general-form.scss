@@ -1,0 +1,31 @@
+article.general-form{
+  .wrapper{
+    max-width: 900px;
+    margin: auto;
+    .form{
+      border: 1px solid $hue1;
+      .form-header{
+        background-color: $hue1;
+        padding: 10px;
+        h1{
+          margin: 0;
+          color: white;
+        }
+      }
+      .form-body{
+        padding: 20px;
+        color: $hue1;
+        label{
+          color: $hue1;
+          font-weight: 600;
+        }
+        .note-editing-area{
+          color: $hue1;
+        }
+        .btn-primary{
+          color: white;
+        }
+      }
+    }
+  }
+}

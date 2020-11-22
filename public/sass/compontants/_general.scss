@@ -1,0 +1,165 @@
+html,
+body {
+  background-color: $background-gray;
+}
+body {
+  font-family: $nunito;
+  padding-top: 56px;
+  min-height: 100vh;
+
+  @include bp('mobile'){
+    font-size: $mobile-font-size;
+  }
+
+  &.no-scroll {
+    overflow: hidden;
+    height: 100%;
+  }
+  .slick-track,.slick-list{
+    transition: none;
+  }
+}
+
+.page{
+  position: relative;
+  min-height: 100vh;
+}
+* {
+  box-sizing: border-box;
+}
+
+p {
+  margin-bottom: 1.5em;
+  a{
+    text-decoration: underline;
+  }
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+}
+
+a,
+a:hover,
+div,
+div:hover,
+img,
+img:hover,
+input[type="submit"],
+input[type="submit"]:hover,
+button,
+button:hover {
+  transition: $transition;
+}
+
+a {
+  color: $link-color;
+  text-decoration: none;
+  &:hover,
+  &:focus {
+    text-decoration: underline;
+  }
+  &:link {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0.3);
+  }
+}
+
+.site{
+  background: #fff;
+
+  @include bp('narrow'){
+    max-width: $site-width;
+    margin: 0 auto;
+  }
+}
+
+.entry-content {
+  p {
+    margin: 0 0 1.5em;
+  }
+  table {
+    width: 100%;
+    border: 1px solid $gray;
+    margin-bottom: 1.5em;
+    th {
+      background-color: $light-gray;
+      border-bottom: 1px solid $gray;
+      border-right: 1px solid $gray;
+      &:last-child {
+        border-right: 0;
+      }
+    }
+    tr {
+      border-bottom: 1px solid $gray;
+      &:nth-child(even) {
+        background-color: $light-gray;
+      }
+    }
+    td {
+      padding: 7px;
+      border-right: 1px solid $gray;
+      &:last-child {
+        border-right: 0;
+      }
+    }
+  }
+  blockquote {
+    margin: 0 0 1.5em 0.75em;
+    padding: 0 0 0 0.75em;
+    border-left: 3px solid #000;
+  }
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  ol{
+    margin-left: 1.5em;
+    list-style-type: decimal;
+  }
+  ul{
+    &.angle{
+      li{
+        &:before{
+          content: $fa-angle-right;
+        }
+      }
+    }
+    &.check{
+      li{
+        &:before{
+          content: $fa-check;
+        }
+      }
+    }
+    &.caret{
+      li{
+        &:before{
+          content: $fa-caret-right;
+        }
+      }
+    }
+  }
+}
+
+.screen-reader-text {
+  clip: rect(1px, 1px, 1px, 1px);
+  position: absolute;
+}
+.background-block-overlay{
+  height: 100%;
+  width: 100%;
+  background: $hue2;
+  position: absolute;
+  opacity: 0.8;
+  border: 5px solid rgba(251,196,3,0.3);
+}
+.animated{
+  opacity: 0;
+  &.show{
+    opacity: 1;
+    animation: zoomIn;
+    animation-duration: 0.6s;
+
+  }
+}

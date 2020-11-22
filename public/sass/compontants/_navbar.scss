@@ -1,0 +1,21 @@
+.navbar{
+  background: $hue1;
+  .navbar-brand{
+    color: $hue2 ;
+    &:hover{
+      color: white !important;
+    }
+  }
+  a,.nav-item{
+    color: white;
+    .nav-link{
+      color: white;
+      &:hover{
+        color: $hue2 !important;
+      }
+    }
+    &:hover{
+      color: $hue2 !important;
+    }
+  }
+}

@@ -1,0 +1,27 @@
+article.post-detailpage{
+  .wrapper{
+    .block{
+      position: relative;
+      .edit-icon{
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        background-color: $hue3;
+        font-size: 20px;
+      }
+      .content{
+        color: black;
+        padding: 20px 30px;
+        .bodyContent{
+          margin: 20px 0;
+          max-width: 90vw;
+          code{
+            max-width: 100%;
+            white-space: normal;
+            display: block;
+          }
+        }
+      }
+    }
+  }
+}

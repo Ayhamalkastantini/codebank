@@ -1,0 +1,21 @@
+.custom-pagination {
+  background: transparent;
+  margin: 50px 0 0;
+  padding: 0;
+  .pagination{
+    margin: 0;
+    .page-item{
+      cursor: pointer;
+      &.active{
+        .page-link{
+          background: $hue2;
+          border-color: $hue2;
+          &:hover{
+            color: white;
+          }
+        }
+      }
+
+    }
+  }
+}
